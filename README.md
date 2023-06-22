@@ -21,4 +21,19 @@ The encoder and decoder are made up of multiple blocks, each containing a multi-
 The model was trained using the Mean Squared Error (MSE) loss between the reconstructed and original images. The loss was computed **only on the masked patches**, similar to BERT.
 
 ## Results and Discussion
-The model was trained on a dataset of images, and the loss was observed to decrease over time, indicating that the model was learning to reconstruct the masked patches. However, the loss plateaued after a certain number of epochs, suggesting that the model had reached its capacity to learn from the given dataset.
+The model was trained on a dataset of images, and the loss was observed to decrease over time, indicating that the model was learning to reconstruct the masked patches. However, the loss plateaued after a certain number of epochs, suggesting that the model had reached its capacity to learn from the given dataset. 
+
+A similar approach was used to improve the efficiency of our object detection model as a downstream task. Since our dataset is proprietary, I've used another dataset to demonstrate the implementation. Some of the outputs are as follows - 
+1)
+
+![onemask](https://github.com/Ruthvik9/Vision-Transformers-for-MaskedAutoEncoding/assets/74010232/d308bb46-5d6d-4e23-8d6f-5d9c139d6ee6)
+
+![onefull](https://github.com/Ruthvik9/Vision-Transformers-for-MaskedAutoEncoding/assets/74010232/ece40c79-dddf-4be9-a863-4caa9e2bac6a)
+
+2)
+
+![twomask](https://github.com/Ruthvik9/Vision-Transformers-for-MaskedAutoEncoding/assets/74010232/093bceb9-8641-468e-b505-f1a56f59cd47)
+
+![twofull](https://github.com/Ruthvik9/Vision-Transformers-for-MaskedAutoEncoding/assets/74010232/b47b7610-b7a6-4f15-8850-a907969c34fd)
+
+
